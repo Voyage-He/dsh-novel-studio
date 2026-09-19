@@ -1,5 +1,5 @@
 declare const plugin: {
-  name: 'dsh-plugin-novel-studio'
+  name: 'dsh-novel-studio'
   inject: ['slots', 'sidebarRightTabs', 'sidebarRight']
   /**
    * 面板通过官方右侧栏（ui-sidebar-right）的 tab 系统承载：类型注册进

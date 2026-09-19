@@ -1,4 +1,4 @@
-# dsh-plugin-novel-studio
+# dsh-novel-studio
 
 [English](./README.md) | **简体中文**
 
@@ -41,7 +41,7 @@
 
 ```bash
 npx @deepseek-ai/dsh plugin --profile web add \
-  dsh-plugin-novel-studio@file:/绝对路径/到/novel-plugin
+  dsh-novel-studio@file:/绝对路径/到/novel-plugin
 ```
 
 然后使用同一 profile 启动：
@@ -55,7 +55,7 @@ npx @deepseek-ai/dsh --profile web
 移除插件：
 
 ```bash
-npx @deepseek-ai/dsh plugin --profile web remove dsh-plugin-novel-studio
+npx @deepseek-ai/dsh plugin --profile web remove dsh-novel-studio
 ```
 
 ## 使用方式

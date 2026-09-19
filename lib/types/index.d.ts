@@ -1,6 +1,6 @@
 import type { Context } from '@deepseek-ai/cordis'
 
-export const name: 'dsh-plugin-novel-studio'
+export const name: 'dsh-novel-studio'
 export const inject: readonly ['tools', 'webServer', 'agents']
 
 export interface Config {

@@ -1,8 +1,8 @@
 # 组合补丁：Host 插件行同时注册小说仓库、Web API 与 AI 可调用工具；
 # package.json 的 dsh.client 清单让同包的 ./client 浏览器 bundle 自动加载。
 - insert:
-    - id: dsh-plugin-novel-studio
-      name: dsh-plugin-novel-studio
+    - id: dsh-novel-studio
+      name: dsh-novel-studio
       config:
         projectDirectory: novel
         historyLimit: 300

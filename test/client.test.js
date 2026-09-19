@@ -54,7 +54,7 @@ test('blank sessions get a novel entry because the session header is hidden', as
   assert.match(source, /conversation\.input\.dock/)
   assert.match(source, /function DockNovelEntry\(props\)/)
   assert.match(source, /session\.blank !== true/)
-  assert.match(source, /dsh-plugin-novel-studio-dock/)
+  assert.match(source, /dsh-novel-studio-dock/)
   assert.match(source, /当前工作区小说/)
 })
 

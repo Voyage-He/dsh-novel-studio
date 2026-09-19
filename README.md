@@ -1,4 +1,4 @@
-# dsh-plugin-novel-studio
+# dsh-novel-studio
 
 **English** | [简体中文](./README.zh.md)
 
@@ -12,7 +12,7 @@ See the [Chinese README](./README.zh.md) for the complete guide.
 
 ```bash
 npx @deepseek-ai/dsh plugin --profile web add \
-  dsh-plugin-novel-studio@file:/absolute/path/to/novel-plugin
+  dsh-novel-studio@file:/absolute/path/to/novel-plugin
 
 npx @deepseek-ai/dsh --profile web
 ```

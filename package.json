@@ -1,5 +1,5 @@
 {
-  "name": "dsh-plugin-novel-studio",
+  "name": "dsh-novel-studio",
   "version": "0.2.0",
   "description": "DeepSeek Harness AI 小说工作室：主对话驱动 AI、阅读器式右栏、手动编辑和可恢复版本历史。",
   "keywords": [
