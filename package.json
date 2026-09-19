@@ -1,0 +1,64 @@
+{
+  "name": "dsh-plugin-novel-studio",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness AI 小说工作室：主对话驱动 AI、阅读器式右栏、手动编辑和可恢复版本历史。",
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "novel",
+    "writing",
+    "ai-writing"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "engines": {
+    "node": ">=22.19"
+  },
+  "files": [
+    "lib",
+    "patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client/index.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "check": "node --check lib/store.js && node --check lib/index.js && node --check lib/client.js",
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
